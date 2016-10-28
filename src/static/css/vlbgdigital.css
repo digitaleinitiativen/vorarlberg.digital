@@ -42,7 +42,7 @@
 body {
   position: relative;
   background-color: #FDFFFC;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -345,7 +345,7 @@ p {
   font-weight: 900; }
 
 .font-family-2 {
-  font-family: "Dosis", serif; }
+  font-family: "Lato", serif; }
 
 .font-family-3 {
   font-family: "Share Tech Mono", sans-serif; }
@@ -360,10 +360,9 @@ p {
 \*------------------------------------*/
 .alpha, .beta, .gamma, .delta, .epsilon, .zeta, .eta, .theta, .iota, .omega {
   color: inherit;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
-  font-style: normal;
-  font-weight: 700; }
+  font-style: normal; }
 
 h1,
 .alpha,
@@ -372,7 +371,6 @@ h1,
   font-size: 1.47566rem;
   margin-bottom: 0.0054rem;
   padding-top: 0.2446rem;
-  font-weight: 700;
   line-height: 2rem; }
   @media (min-width: 30em) {
     h1,
@@ -408,7 +406,6 @@ h2,
   font-size: 1.383rem;
   margin-bottom: 0.22367rem;
   padding-top: 0.27633rem;
-  font-weight: 700;
   line-height: 1.5rem; }
   @media (min-width: 30em) {
     h2,
@@ -573,7 +570,7 @@ h6,
   font-size: 1rem;
   margin-bottom: 0.59999rem;
   padding-top: 0.40001rem;
-  font-family: "Dosis", serif;
+  font-family: "Lato", serif;
   line-height: 1.5rem; }
   @media (min-width: 30em) {
     .h7,
@@ -3586,6 +3583,11 @@ h6,
       left: 50%;
       transform: translate(-50%, -50%); }
 
+* {
+  box-sizing: border-box; }
+
+/*------------------------------------*    #STICKY FOOTER
+\*------------------------------------*/
 body {
   display: flex;
   min-height: 100vh;
@@ -3594,16 +3596,54 @@ body {
 .main {
   flex: 1; }
 
+/*------------------------------------*    #HEADER
+\*------------------------------------*/
 .header {
-  position: fixed;
-  z-index: 9000;
-  left: 0;
-  top: 0;
-  width: 100%; }
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  .header__logo {
+    max-width: 200px; }
+    .header__logo img {
+      margin-top: -1.5em;
+      margin-bottom: -1.5em; }
+  .header__slogan {
+    color: #000000; }
 
+.menu a {
+  color: #000000; }
+
+/*------------------------------------*    #FOOTER
+\*------------------------------------*/
 .footer {
   background-color: #000000;
   color: #FDFFFC; }
 
+/*------------------------------------*    BLOCKS
+\*------------------------------------*/
 .block--detail__image {
   margin-bottom: 24px; }
+
+@keyframes zoominout {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+.block--hero__image {
+  animation: zoominout 20s infinite; }
+
+.block--card__content {
+  background-color: #FDFFFC; }
+
+.block--feature__icon {
+  font-size: 3em; }
+
+/*------------------------------------*    SECTION
+\*------------------------------------*/
+.section--row3-masonry {
+  background-color: #333; }
+  .section--row3-masonry__content {
+    padding-top: 48px;
+    padding-bottom: 0; }

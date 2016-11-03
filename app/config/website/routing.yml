@@ -11,3 +11,7 @@ sulu_website:
 massive_event:
     type: portal
     resource: "@MassiveEventBundle/Resources/config/routing_website.yml"
+
+massive_blog:
+    type: portal
+    resource: "@MassiveBlogBundle/Resources/config/routing_website.yml"

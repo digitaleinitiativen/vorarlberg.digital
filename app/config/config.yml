@@ -86,6 +86,7 @@ sulu_core:
         structure:
             default_type:
                 snippet: "default"
+                blog: "default"
             paths:
                 homepage:
                     path: "%kernel.root_dir%/Resources/templates/pages"

@@ -103,3 +103,11 @@ massive_event:
 massive_event_api:
     resource: "@MassiveEventBundle/Resources/config/routing_api.yml"
     prefix: /admin/api
+
+massive_blog:
+    resource: "@MassiveBlogBundle/Resources/config/routing.yml"
+    prefix: /admin/blog
+
+massive_blog_api:
+    resource: "@MassiveBlogBundle/Resources/config/routing_api.yml"
+    prefix: /admin/api

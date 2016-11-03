@@ -34,7 +34,8 @@
         "doctrine/doctrine-bundle": "^1.0",
         "doctrine/doctrine-cache-bundle": "^1.0",
         "oro/doctrine-extensions": "^1.0",
-        "massive/event-bundle": "0.5.*"
+        "massive/event-bundle": "0.5.*",
+        "massive/blog-bundle": "1.0.0-RC4"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -83,6 +84,10 @@
         {
             "type": "vcs",
             "url": "git@gitlab.massiveart.com:bundle/MassiveEventBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.massiveart.com:bundle/massive-blog-bundle.git"
         }
     ]
 }

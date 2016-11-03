@@ -141,3 +141,6 @@ dubture_f_fmpeg:
 services:
     jms_serializer.cache_naming_strategy: "@sulu_core.serialize_caching_strategy"
 
+massive_event:
+    templates:
+        detail: ":templates:event.html.twig"

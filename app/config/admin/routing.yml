@@ -95,3 +95,11 @@ sulu_custom_urls_api:
 sulu_search:
     resource: "@SuluSearchBundle/Resources/config/routing.yml"
     prefix: /admin/search
+
+massive_event:
+    resource: "@MassiveEventBundle/Resources/config/routing.yml"
+    prefix: /admin/event
+
+massive_event_api:
+    resource: "@MassiveEventBundle/Resources/config/routing_api.yml"
+    prefix: /admin/api

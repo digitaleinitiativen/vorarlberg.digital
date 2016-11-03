@@ -4,7 +4,7 @@
           xsi:schemaLocation="http://schemas.sulu.io/webspace/webspace http://schemas.sulu.io/webspace/webspace-1.1.xsd">
 
     <name>vorarlberg.digital</name>
-    <key>vorarlberg-digital</key>
+    <key>vorarlbergdigital</key>
 
     <localizations>
         <localization language="de" default="true"/>
